@@ -1,0 +1,12 @@
+<h2>
+  <Label>  List of Students </Label>
+<% if @student.any? %>
+  <ul id="student"> 
+    <% @student.each do |student| %>
+      <li> <a href="/students/<%= student.id %>"><%= student.name %></a></li>
+      <br>
+      <% end %>
+      </ul>
+      <% else %>
+  <p> No students have been created yet! </p>
+  <% end %>

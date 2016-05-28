@@ -1,0 +1,31 @@
+<div >
+<label for="id" class="space"> Id:
+<input id="id" class="spacing" type="number" name="student[id]" value="<% @student.id %>" class="myid"></label>
+</div>
+<div>
+<label class ="space" for="name">  Name:
+<input id="name" class="spacing" type="text" name="student[name]" value="<%= @student.name %>" class="myid"></label>
+</div>
+<div>
+<label for="age" class="space"> Age:
+<input id="age" class="spacing" type="number" name="student[age]" value="<%= @student.age %>" class="myid"></label>
+</div>
+<div>
+<label for="birthday" class="space"> DOB(mm/dd/yyyy):
+<input id="birthday" class="spacing" type="text" name="student[birthday]" value="<%= @student.birthday.strftime("%m/%d/%Y") if @student.birthday %>" class="myid"></label>
+</div>
+<div>
+<label for="major" class="space"> Major:
+<input id="major" class="spacing" type ="text" name="student[major]" value ="<%= @student.major %>" class="myid"></label>
+</div>
+<div>
+<label for="guardian" class="space"> Guardian:
+<input id="guardian" class="spacing" type="text" name="student[guardian]" value="<%= @student.guardian %>" class="myid"></label>
+</div>
+<div>
+<label for="address" class="space"> Address:
+<input id="address" class="spacing" type="text" name="student[address]" value="<%= @student.address %>" class="myid"></label>
+</div>
+<div>
+<input class="btn" type="submit" value="Save Student">
+</div>
